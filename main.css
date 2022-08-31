@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,p, .profile-name div{ 
+    margin: 0 !important;
+}
+
+a{
+    text-decoration: none;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button{
+    display: flex;
+    min-width: 100px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.button:hover{
+    border-bottom: 3px solid white;
+    transform: scale(1.1);
+}
+.user-corner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color:rgba(84, 136, 252, 0.49);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.504);
+}
+
+.notif-bar, .activity, .setting{
+    width: calc(100%/3);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notif-bar .chats,.media-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(180deg, rgba(0, 0, 255, 0.382), rgba(183, 0, 255, 0.382));
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+}
+.notif-bar .chats img{
+    width: 25px;
+    transition: transform 0.8s ease;
+}
+.chats div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chats div:hover{
+    background-color: rgba(255, 255, 255, 0.184);
+}
+.chats div:hover img{
+    transform: scale(1.15);
+    filter:  invert(1);
+}
+
+
+.activity img{
+    width: 18px;
+   filter: invert(1);
+}
+
+.add-post, .draft, .create, .event{
+
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(45, 43, 43);
+
+}
+
+
+.setting .bar{
+    background-color: black;
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.5s;
+ }
+.body-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("./images/wallpaper2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: 75%;
+    justify-content: center;
+    row-gap: 40px;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(231, 231, 231, 0.504);
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.user-blog-back,.user-blog-front{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.584);
+    border-radius: 10px;
+}
+
+.user-blog-back:hover{
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.408);
+}
+
+.user-blog-back::before{
+    content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.688);
+    left: 0px;
+    top: 0px;
+}
+
+.user-blog-front{
+    background: none;
+    padding: 20px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.user-profile .user-img{
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-profile .profile-data{
+    /* padding: 0px 0px 0px 20px; */
+    display: flex;
+    align-items: center;
+}
+.profile-data div{
+    margin-left: 20px;
+}
+
+.follow-btn{
+    background-color: blue;
+    /* margin: 0px 0px 0px 60px; */
+    color: white;
+    font-weight: bold;
+}
+
+.more img{
+    height: 25px;
+    cursor: pointer;
+}
+
+ /* .blog-title, .blog-content,.media{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-inline: 20px;
+} */
+
+.blog-title,.blog-content{
+    justify-items: left;
+    padding: 10px;
+    box-shadow:0px 2px 16px rgba(0, 0, 0, 0.408);
+}
+
+.blog-title h1, .blog-content p{
+    grid-column: 1 / -1;
+}
+
+.blog-title, .blog-content{
+    border-radius: 5px;
+    background-color: white;
+    margin-block: 10px;
+}
+
+.media{
+   height: 50px;
+}
+.media-option{
+    width: 100%;
+    grid-column: 1 / -1;
+}
+.media-option img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 15px;
+}
+.scrollbar::-webkit-scrollbar-track {
+    background:rgba(217, 216, 216, 0.984);
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.451);
+}
+    
+.scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(153, 0, 255, 0.437), rgba(0, 153, 255, 0.437));
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.451);
+}

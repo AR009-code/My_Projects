@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+
+    <div class="modal">
+        <div class="close-btn">&times;</div>
+        <form class="login-form modal-content " action="http://localhost:3000/login" method="post">
+            
+            <div class="login-container">
+
+                <div class="form-header form-title">Webipedia</div>
+                <div class="login-logo">
+                    <img src="./images/protection.png" alt="login-icon">
+                </div>
+                <div class="form-header">Log-In</div>
+
+                <fieldset class="email-field">
+                    <legend>
+                        <label for="email"><small>Email</small></label>
+                    </legend>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                
+                <fieldset class="pwd-field">
+                    <legend>
+                        <label for="pwd"><small>Password</small></label>
+                    </legend>
+                    <input type="password" id="pwd" name="password" required>
+                </fieldset>
+                
+                <div class="button-field">
+                    <input class="submit-btn" type="submit" id="log-in" value="Log-In">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="./log-in.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    
+<!--START - Menu bar of the home page -->
+<div class="header clear">
+
+    <div id="title"> <h1>Webipedia</h1></div>
+    <div id="search-bar">
+        <input type="search" name="search-bar" placeholder="@username,@topics"> <!-- users will search posts and users in here-->
+        <div id="search-icon">
+            <a href=""><img src="./images/search.jpg" alt="Search"></a>
+        </div>
+    </div>
+    <nav class="navigation">
+        <div id="links" class="clear">
+            <ul>
+                <li><a href="">Favourites</a></li>   <!--About this webpage-->
+                <li class="dropdown"><a href="#">Resource</a>         
+                    <!-- web resources uploaded by javascript dynamically -->
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">MDN Web docs</a></li>
+                            <li><a href="#">W3Schools</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Javascript</a></li>
+                            <li><a href="#">NodeJS</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Users</a></li>   <!--a page will open where registered users will be shown-->
+                <li><a href="#">Contact Us</a>
+                </li>
+                <li><a href="#">Support</a></li>   <!--a page will open where registered users will be shown-->
+            </ul>
+        </div>
+    </nav>
+    <div id="profile">
+        <button id="sign-up">Sign-Up</button>
+        <button id="log-in">Log In</button>
+       <div class="register">
+        <!-- <img src="../../public/images/account.jpg" alt="icon"> -->
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+       </div> 
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<!-- END Menu bar -->
+<div class="container">
+    <h1>Hello</h1>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
